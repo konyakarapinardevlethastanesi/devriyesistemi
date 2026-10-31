@@ -619,9 +619,8 @@
     <!-- ALT BİLGİ (FOOTER) -->
    
    <footer class="bg-slate-900 text-slate-400 py-1 text-center text-[10px] leading-4 border-t border-slate-800 no-print">
-            <p>Konya Karapınar Devlet Hastanesi <span id="currentYearSpan"></span> © Tüm Hakları Saklıdır.</p>
-        </footer>
-    </div>
+    <p>Konya Karapınar Devlet Hastanesi <span id="currentYearSpan"></span> © Tüm Hakları Saklıdır.</p>
+</footer>
     
     <!-- ==================== JAVASCRIPT MANTIĞI ==================== -->
     <script>
@@ -1354,7 +1353,7 @@
             setInterval(updateClock, 1000);
 
             // Alt bilgi telif yılı otomatik güncelleme
-            document.getElementById("currentYear").innerText = new Date().getFullYear();
+            document.getElementById('currentYearSpan').textContent = new Date().getFullYear();
         });
     </script>
 </body>
